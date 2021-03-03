@@ -398,11 +398,28 @@ public class AltaEmpelado extends javax.swing.JFrame {
         emp.setNombre(this.jTextField.getText());
         emp.setApPaterno(this.jTextField2.getText());
         emp.setApMaterno(this.jTextField3.getText());
-        emp.setEdad(Integer.parseInt(jTextField4.getText()));
-        emp.serCurp(jTextField5.getText)
+        emp.setEdad(Integer.parseInt(jTextField4.getText() ) ); //Convierte a int
+        emp.setCurp( jTextField5.getText() );
+        emp.setDomicilio(new Direccion());
+        emp.getDomicilio.setCalle(this.jTextField6.getText());
+        emp.getDomicilio.setNumero(this.jTextField7.getText());
+        emp.getDomicilio.setColonia(this.jTextField8.getText());
+        emp.getDomicilio.setDelegacion(this.jTextField9.getText());
+        emp.getDomicilio.setEstado(this.jTextField10.getText());
+        emp.setNumeroEmpleado(Integer.parseInt(jTextField11.getText() ) );
+        emp.setDepartamento( jTextField12.getText() );
+        emp.setSueldo( Float.parseFloat(jTextField13.getText() ));
+        emp.setHorasExtra(Integer.parseInt(jTextField14.getText() ));
+        int confirmar = JOptionPane.showconfirmDialog(this, "¿Deseas guardar estos datos?");
+                                                
+                
+              
+                
+                
+                
     }//GEN-LAST:event_jButton5MouseClicked
     private void Limpiarformulario(){
-       this.jTextField1.setText("");
+      this.jTextField1.setText("");
       this.jTextField2.setText("");
       this.jTextField3.setText("");
       this.jTextField4.setText("");
@@ -412,14 +429,18 @@ public class AltaEmpelado extends javax.swing.JFrame {
       this.jTextField8.setText("");
       this.jTextField9.setText("");
       this.jTextField10.setText("");
-      this.jTextField10.setColumns(10);
       this.jTextField11.setText("");
       this.jTextField11.setColumns(10);
       this.jTextField12.setText("");
+      this.jTextField12.setColumns(10);
       this.jTextField13.setText("");
       this.jTextField14.setText("");
+      this.jTextField15.setText("");
+      this.jTextField15.setColumns(10);
       
-       
+      
+      
+
        
     }
     
